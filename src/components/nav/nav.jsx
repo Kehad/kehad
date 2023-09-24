@@ -1,8 +1,8 @@
 import classes from "./nav.module.css";
-import { useEffect, useState } from "react";
+// import { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
 const Nav = function () {
-  const [newActive, setNewActive] = useState(false);
+  // const [newActive, setNewActive] = useState(false);
   // const [skillActive, setSkillActive] = useState(false);
   // const [workActive, setWorkActive] = useState(false);
   // const [sideProjectActive, setProjectActive] = useState(false);
