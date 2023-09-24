@@ -1,0 +1,122 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital@1&family=Nunito&display=swap'); */
+
+.nav {
+  /* margin-top: -10rem; */
+  /* position: relative; */
+  /* position: fixed; */
+  font-style: normal;
+}
+
+.nav__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 7.75156rem;
+  background: #232323;
+  width: max-content;
+  padding: 5rem 2.5rem;
+  gap: 1rem;
+
+  transition: all 0.5s;
+}
+
+.nav__container---box {
+  margin: 1rem 0;
+  transition: all 0.5s;
+}
+.nav__container---box--link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  gap: 10px;
+  font-size: 1.25rem;
+  margin-left: 0.5rem;
+  font-family: Josefin Sans;
+  transition: all 0.5s;
+}
+
+.nav-item {
+  /* color: #fff;
+    text-decoration: none; */
+}
+.nav__container---box--link:hover {
+  color: #07c51a !important;
+}
+
+.home {
+  color: #07c51a !important;
+}
+.nav__container---box--icon {
+  margin-right: 10.5rem;
+  color: red !important;
+}
+.nav__container---box--name {
+  display: none;
+}
+
+.nav__container:hover {
+  transition: all 10s;
+}
+.nav__container:hover .nav__container---box--name {
+  display: block;
+}
+@media screen and (max-width: 1024px) {
+  .nav {
+    /* display: none; */
+  }
+
+  .nav__container {
+    padding: 5rem 1.5rem;
+  }
+  .nav__container---box--link {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 769px) {
+  .nav {
+    /* display: none; */
+  }
+
+  .nav__container {
+    padding: 5rem 1.5rem;
+  }
+  .nav__container---box--link {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 769px) {
+    .nav {
+        width: 100%;
+    }
+    .nav__container {
+        width: 100%;
+        padding: 0rem;
+        border-radius: none;
+        background: none;
+        gap: 3rem;
+        /* flex-direction: row; */
+        /* justify-content: center; */
+        
+        
+        display: grid;
+        grid-template-columns: auto auto auto auto auto;
+    }
+    .nav__container---box--name {
+        display: none;
+    }
+    .nav__container:hover .nav__container---box--name {
+        display: none;
+    }
+    .nav__container---box--link-arrange1 {
+       grid-area: 1 / 1 / 2 / 2;
+    }
+    .nav__container---box--link-arrange2 {
+      /* grid-area: 1 / 3 / 2 / 4; */
+      grid-area: 1 / 5 / 2 / 6;
+    }
+    .nav__container---box--link-contact {
+        display: none;
+    }
+}

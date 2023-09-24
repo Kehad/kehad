@@ -1,0 +1,40 @@
+.project {
+    margin-top: 5rem;
+    position: relative;
+}
+
+.project__greeting {
+    color: #07C51A;
+    font-family: Judson;
+    font-size: 4rem;
+    margin-bottom: 1rem;
+}
+
+
+.project__arrow--left,
+.project__arrow--right {
+    width: 4rem;
+    height: 4rem;
+    flex-shrink: 0;
+}
+
+.project__arrow--left {
+    position: absolute;
+    /* left: -10%; */
+    left: -90px;
+    top: 50%;
+}
+.project__arrow--right {
+    position: absolute;
+    /* right: -10%; */
+    right: -90px;
+    top: 50%
+}
+@media screen and (max-width: 450px) {
+    .project {
+        margin-top: 3rem;
+    }
+    .project__greeting {
+        font-size: 2.2rem;
+    }
+}

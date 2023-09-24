@@ -1,0 +1,76 @@
+.contact {
+  margin-top: 5rem;
+}
+
+.contact__greeting {
+  color: #07c51a;
+  font-family: Judson;
+  font-size: 4rem;
+  margin-bottom: 1rem;
+}
+
+.contact__text {
+  color: #fff;
+  font-family: Judson;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+.contact__text-extra {
+  color: inherit;
+  text-decoration: none;
+    color: #07c51a;
+
+}
+
+.contact__container {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    border-radius: 0.71869rem;
+    background: #263328;
+    width: max-content;
+}
+
+.contact__container---box {
+    display: flex;
+    gap: 1rem; 
+    margin-bottom: 1.5rem;
+}
+
+.contact__container---box--input1 {
+    border-radius: 0.25rem;
+    border: 1px solid #07C51A;
+    padding: 1rem 1rem;
+    background-color: transparent;
+    color: white;
+    width: 18rem;
+    outline: none;
+    font-size: 1.25rem;
+}
+
+.contact__container---textarea {
+    resize: none;
+    height: 5rem;
+    background-color: transparent;
+    border-radius: 0.25rem;
+    border: 1px solid #07C51A;
+    padding: 1rem 1rem;
+    outline: none;
+    font-size: 1.25rem;
+    color: white
+}
+
+.contact__container---small {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1.5rem;
+}
+
+.disabledLink {
+  /* pointer-events: none; */
+  border: 1px solid #07C51A;
+    color: #07C51A;
+    background: none;
+}

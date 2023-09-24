@@ -1,0 +1,39 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.header__logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.header__logo---text {
+    font-size: 2rem;
+}
+
+.header__box {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    align-items: center;
+    padding: 10px;
+
+    border-radius: 2.125rem;
+    border: 1px solid #07C51A;
+}
+
+.header__box---cont--nights {
+    background-color:  #07C51A;
+    border-radius: 50%;
+    width: 1.5rem;
+    height: 1.5rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
