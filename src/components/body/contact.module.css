@@ -28,8 +28,9 @@
     flex-direction: column;
     padding: 2rem;
     border-radius: 0.71869rem;
+    width: 40rem;
     background: #263328;
-    width: max-content;
+    /* width: max-content; */
 }
 
 .contact__container---box {
@@ -44,9 +45,9 @@
     padding: 1rem 1rem;
     background-color: transparent;
     color: white;
-    width: 18rem;
     outline: none;
     font-size: 1.25rem;
+    width: 100%;
 }
 
 .contact__container---textarea {
@@ -75,7 +76,7 @@
     background: none;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1224px) {
     .contact__greeting {
         font-size: 3rem;
     }
@@ -87,6 +88,35 @@
     .contact__text {
         font-size: 1.5rem;     
     }
+    .contact__container {
+      padding: 1rem;
+      width: 100%;
+    }
+      .contact__container---box--input1 {
+      padding: 0.5rem 0.5rem;
+      /* width: 14rem; */
+    }
+}
+@media screen and (max-width: 850px) {
+      .contact__container---box--input1 {
+      /* width: 12rem; */
+
+    }
+}
+
+@media screen and (max-width: 769px) {
+   .contact__container {
+      width: 100%;
+      /* width: 14rem; */
+    }
+      .contact__container---box--input1 {
+      /* width: 70%; */
+      font-size: 1.1rem;
+
+    }
+    .contact__container---textarea {
+      font-size: 1.1rem;
+    }
 }
 
 
@@ -97,12 +127,23 @@
     .contact__greeting {
         font-size: 2rem;
     }
-
-    .contact__name {
-        font-size: 1.5rem;
+    .contact__container {
+      width: 100%;
     }
+
+   .contact__container---box{
+    flex-direction: column;
+   }
 
     .contact__text {
         font-size: 1rem;     
+    }
+      .contact__container---box--input1 {
+        width: 100%;
+        /* width: 14rem; */
+        font-size: 1rem;
+    }
+    .contact__container---textarea {
+      font-size: 1rem;
     }
 }

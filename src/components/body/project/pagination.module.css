@@ -17,6 +17,9 @@
     right: -90px;
     top: 50%
 }
+.pagination__button-text {
+    display: none;
+}
 
 @media screen and (max-width: 1024px) {
     .pagination__arrow--left {
@@ -35,13 +38,17 @@
     }
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 769px) {
     .pagination__arrow--left {
-        left: -50px;
-        top: 30%;
+        display: none;
     }
-     .pagination__arrow--right {
-        right: -40px;
-        top: 30%
+    .pagination__arrow--right {
+
+        display: none;
+    }
+    .pagination__button-text {
+        display: flex;
+        gap: 0.5rem;
+        justify-content: right;
     }
 }

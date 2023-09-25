@@ -14,6 +14,8 @@ import Project from './components/body/project/project';
 import MenuBar from './components/menubar/menubar';
 
 function App() {
+    // const params = useParams("/");
+    // console.log(params);
 
   return (
     <>
@@ -22,7 +24,7 @@ function App() {
         {/* <MenuBar /> */}
         <div className="centered">
           <Nav />
-          <div> 
+          <div>
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/home" element={<Home />} />
@@ -31,6 +33,7 @@ function App() {
               <Route path="/works" element={<Works />} />
               <Route path="/side-project" element={<Project />} />
               <Route path="/contact-me" element={<Contact />} />
+              <Route path="*" element={<Home />} />
             </Routes>
           </div>
         </div>
