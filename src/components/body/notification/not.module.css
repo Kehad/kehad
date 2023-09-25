@@ -41,3 +41,15 @@
 .notify__text---success {
     background: green;
 }
+
+@media screen and (max-width: 450px) {
+    .notify__header {
+        border-bottom: 1px solid #eee;
+        font-size: 1rem;
+    }
+
+    .notify__text {
+        padding: 0.2rem;
+        font-size: 1rem;
+    }
+}

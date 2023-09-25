@@ -110,7 +110,7 @@ const Contact = function (props) {
       setAuthenticated(false);
       setAuthenticatedError(false);
 
-    }, 3000);
+    }, 5000);
   
 
   

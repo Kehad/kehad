@@ -15,7 +15,7 @@ const Skills = function () {
             width="30"
             height="30"
             viewBox="0 0 30 30"
-            fill="none"
+            fill="white"
             xmlns="http://www.w3.org/2000/svg"
           >
             <g id="icomoon-free:html-five" clipPath="url(#clip0_155_41)">
