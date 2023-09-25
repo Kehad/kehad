@@ -1,0 +1,41 @@
+ @import '../nav/nav.module.css';
+
+.menubar {
+    height: 100%;
+    background-color: red;
+    width: 8rem;
+    position: fixed;
+    top: 0;
+    right: 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+}
+
+.menu-icon {
+    /* padding: 0.2rem;
+    border: 1px solid #07c51a;
+    border-radius: 0.3rem; */
+    width:max-content;
+    height: max-content;
+    /* color: #07c51a; */
+    cursor: pointer;
+}
+@media screen and (max-width: 769px) {
+
+    .nav__container---box--name {
+        display: none;
+    }
+    .nav__container:hover .nav__container---box--name {
+        display: none;
+    }
+
+    .nav__container---box--link-contact {
+        display: block;
+    }
+}
+/* @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital@1&family=Nunito&display=swap'); */
+
+

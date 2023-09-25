@@ -39,7 +39,8 @@ const Nav = function () {
             {/* <i
               className={`fa fa-address-book ${["nav__container---box--icon"]}`}
             ></i> */}
-            <i className="material-icons material-icons-round">home</i>
+            {/* <i className="material-icons">home</i> */}
+            <span className="material-symbols-rounded">home</span>
             <span className={classes["nav__container---box--name"]}>Home</span>
           </NavLink>
         </div>

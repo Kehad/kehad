@@ -1,0 +1,22 @@
+.toggle__box {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    align-items: center;
+    padding: 10px;
+    border-radius: 2.125rem;
+    border: 1px solid #07C51A;
+
+    flex-direction: column;
+}
+
+.toggle__box---cont--nights {
+    background-color:  #07C51A;
+    border-radius: 50%;
+    width: 1.5rem;
+    height: 1.5rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

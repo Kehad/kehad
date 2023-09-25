@@ -74,3 +74,35 @@
     color: #07C51A;
     background: none;
 }
+
+@media screen and (max-width: 1024px) {
+    .contact__greeting {
+        font-size: 3rem;
+    }
+
+    .contact__name {
+        font-size: 2rem;
+    }
+
+    .contact__text {
+        font-size: 1.5rem;     
+    }
+}
+
+
+@media screen and (max-width: 450px) {
+  .contact {
+    margin-top: 3rem;
+  }
+    .contact__greeting {
+        font-size: 2rem;
+    }
+
+    .contact__name {
+        font-size: 1.5rem;
+    }
+
+    .contact__text {
+        font-size: 1rem;     
+    }
+}

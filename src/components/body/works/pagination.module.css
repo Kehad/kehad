@@ -49,4 +49,8 @@
         left: -50px;
         top: 30%;
     }
+    .pagination__arrow--right {
+        right: -40px;
+        top: 30%
+    }
 }

@@ -11,6 +11,7 @@ import Skills from './components/body/skills';
 import Works from './components/body/works/works';
 import Contact from './components/body/contact';  
 import Project from './components/body/project/project';
+import MenuBar from './components/menubar/menubar';
 
 function App() {
 
@@ -18,6 +19,7 @@ function App() {
     <>
       <Layout>
         <Header />
+        {/* <MenuBar /> */}
         <div className="centered">
           <Nav />
           <div> 
