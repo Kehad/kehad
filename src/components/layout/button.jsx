@@ -9,9 +9,10 @@ const Button = function (props) {
         <a
           href={props.link}
           onClick={props.action}
-          className={classes["button__profile"]}
+          className={`${classes["button__profile"]} ${props.altClass}`}
           download={props.download}
           target={props.target}
+          style={props.style}
         >
           {props.name}
         </a>

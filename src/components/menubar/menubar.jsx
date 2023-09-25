@@ -20,7 +20,7 @@ const MenuBar = function (props) {
   return (
     <div className={classes.menubar}>
       <div className={classes["menu-icon"]}>
-        <span onClick={cancelHandler} className="material-symbols-rounded">
+        <span onClick={cancelHandler} style={{ fontSize: '36px' }} className="material-symbols-rounded">
           cancel
         </span>
       </div>
@@ -41,7 +41,7 @@ const MenuBar = function (props) {
           </span>
         </NavLink>
       </div>
-      
+
       <Toggle onAction={cancelHandler} />
     </div>
   );

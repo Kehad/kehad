@@ -24,6 +24,12 @@
 
 @media screen and (max-width: 769px) {
     .toggle__box {
-        flex-direction: column;
+        /* align-self: self-end; */
+    }
+    .toggle {
+        align-items: flex-end;
+            flex-grow: 1;
+        display: flex;
+        margin-bottom: 3rem;
     }
 }

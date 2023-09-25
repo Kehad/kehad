@@ -3,6 +3,8 @@ import React, { useState } from "react";
 import classes from "./worksList.module.css";
 import WorksItem from "./worksItem.jsx";
 import Pagination from "./pagination.jsx";
+
+
 import Adbook from "../../../images/Adbook.png";
 import kadee from "../../../images/kadee.png";
 import Exchnge from "../../../images/static-exchnge.png";
@@ -37,9 +39,9 @@ const worksData = [
 
 const WorkList = function (props) {
   const [currentPage, setCurrentPage] = useState(1);
-  const [prevdisable, setPrevDisable] = useState(false);
-  const [initdisable, setInitDisable] = useState(false);
-  const [fordisable, setForDisable] = useState(false);
+  const [initDisable, setInitDisable] = useState(false);
+  const [prevDisable, setPrevDisable] = useState(false);
+  const [forDisable, setForDisable] = useState(false);
 
   const recordsPerPage = 1;
   const lastIndex = currentPage * recordsPerPage;
@@ -75,7 +77,7 @@ const WorkList = function (props) {
       return;
     }
     setForDisable(false);
-    setPrevDisable(false);
+    setPrevDisable(true);
     setCurrentPage(currentPage - 1);
   }
   function handleNextClick() {
@@ -112,9 +114,9 @@ const WorkList = function (props) {
         next={handleNextClick}
         back={handleBackClick}
         currentPage={currentPage}
-        nextDisable={fordisable}
-        backDisable={prevdisable}
-        initdisable={initdisable}
+        nextDisable={forDisable}
+        backDisable={prevDisable}
+        initDisable={initDisable}
       />
     </div>
   );
