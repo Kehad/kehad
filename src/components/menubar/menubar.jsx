@@ -41,6 +41,7 @@ const MenuBar = function (props) {
           </span>
         </NavLink>
       </div>
+      
       <Toggle onAction={cancelHandler} />
     </div>
   );

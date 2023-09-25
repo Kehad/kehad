@@ -11,7 +11,7 @@ function MyComponent(props) {
         typeSpeed: 100,
         backSpeed: 100,
         backDelay: 1000,
-        loop: false
+        loop: true
     });
 
     return () => {

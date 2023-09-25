@@ -11,6 +11,9 @@ body {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+
+  height: 100%;
+  width: 100%;
 }
 
 .centered {

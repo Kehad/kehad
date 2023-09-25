@@ -23,7 +23,7 @@
 @media screen and (max-width: 450px) {
     .layout {
         padding-top: 2rem;
-    height: 115vh;
+    /* height: 115vh; */
 
     }
 }

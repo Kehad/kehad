@@ -18,6 +18,8 @@
 
 .header-icon-close {
     cursor: pointer;
+
+    display: none;
 }
 
 .material-symbols-rounded {
@@ -26,4 +28,18 @@
   'wght' 400,
   'GRAD' 0,
   'opsz' 24
+}
+.header__toggle {
+    display: block;
+}
+@media screen  and (max-width: 769px) {
+    .header__toggle {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 769px) {
+    .header-icon-close {
+        display: block;
+    }
 }

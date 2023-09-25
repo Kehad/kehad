@@ -48,11 +48,14 @@ const Header = function () {
         </div>
 
         {/* <MenuBar /> */}
+        <div className={classes["header__toggle"]}>
+          <Toggle />
+        </div>
       </div>
 
-      {isMenuActive && <MenuBar
-        menuActive={isMenuActive}
-        setIsMenuActive={setIsMenuActive} />}
+      {isMenuActive && (
+        <MenuBar menuActive={isMenuActive} setIsMenuActive={setIsMenuActive} />
+      )}
     </>
   );      
 };
