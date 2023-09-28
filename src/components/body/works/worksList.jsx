@@ -8,6 +8,7 @@ import Pagination from "./pagination.jsx";
 import Adbook from "../../../images/Adbook.png";
 import kadee from "../../../images/kadee.png";
 import Exchnge from "../../../images/static-exchnge.png";
+import MobilePagination from "../Paginations/mobilePagination";
 // import
 
 const worksData = [
@@ -127,6 +128,7 @@ const WorkList = function (props) {
         backDisable={prevDisable}
         initDisable={initDisable}
       />
+     
     </div>
   );
 };

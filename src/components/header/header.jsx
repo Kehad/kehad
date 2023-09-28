@@ -15,7 +15,8 @@ const Header = function (props) {
   return (
     <>
       <div className={classes.header}>
-        <div className={classes["header__logo"]}>
+        <a href='www.kehad.onrender.com'>
+          <div className={classes["header__logo"]}>
           <svg
             width="39"
             height="33"
@@ -41,7 +42,7 @@ const Header = function (props) {
             </g>
           </svg>
           <h1 className={classes["header__logo---text"]}>Kehad</h1>
-        </div>
+        </div></a>
         {/* <Toggle /> */}
         <div className={classes["header-icon-close"]}>
           <span onClick={menuHandler} className="material-symbols-outlined">

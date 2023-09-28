@@ -1,0 +1,26 @@
+@media screen and (max-width: 769px) {
+    .mobilePagination__small--left {
+        /* left: -50px;
+        top: 30%; */
+        height: 2rem;
+        /* display: none; */
+        cursor: pointer;
+    }
+    .mobilePagination__small--right {
+        /* right: -40px;
+        top: 30%; */
+        height: 2rem;
+        width: max-content;
+        cursor: pointer;
+        /* display: none; */
+    }
+    .mobilePagination__button-text {
+        display: flex;
+        /* gap: 0.5rem; */
+        justify-content: right;
+    }
+    .mobilePagination__arrow--left,
+    .mobilePagination__arrow--right {
+        display: none;
+    }
+}

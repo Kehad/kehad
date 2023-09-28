@@ -2,6 +2,7 @@ import React from "react";
 
 import Button from '../../layout/button';
 import classes from "./worksItem.module.css";
+import MobilePagination from "../Paginations/mobilePagination";
 
 
 const WorksItem = function (props) {
@@ -26,7 +27,9 @@ const WorksItem = function (props) {
           />
         </div>
       </div>
-          <Button link={website} target={"_blank"} name={"Visit Website"} />
+      <div className={classes["worksItem__box--buttons"]}>  
+        <Button link={website} target={"_blank"} name={"Visit Website"} />
+        </div>
     </div>
   );
 };

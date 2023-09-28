@@ -20,7 +20,8 @@ const MenuBar = function (props) {
   return (
     <div className={classes.menubar}>
       <div className={classes["menu-icon"]}>
-        <span onClick={cancelHandler} style={{ fontSize: '36px' }} className="material-symbols-rounded">
+        {/* <span onClick={cancelHandler} style={{ fontSize: '36px' }} className={`${classes["aa"]} materials-symbols-rounded`}> */}
+        <span onClick={cancelHandler} style={{ fontSize: '36px' }} className="material-symbols-rounded aa">
           cancel
         </span>
       </div>

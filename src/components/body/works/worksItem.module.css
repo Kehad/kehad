@@ -47,6 +47,12 @@
     object-fit: cover;
 }
 
+.worksItem__box--buttons {
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+}
+
 @media screen and (max-width: 1024px) {
     .worksItem__box {
         display: flex;
@@ -83,5 +89,5 @@
     background-image: url("./arrow-right-solid.svg");
 }
 .carousel-control-prev-icon {
-    display: none;
+    /* display: none; */
 }

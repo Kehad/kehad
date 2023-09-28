@@ -2,6 +2,7 @@ import React from "react";
 
 import Button from "../../layout/button";
 import classes from "./pagination.module.css";
+import MobilePagination from "../Paginations/mobilePagination";
 
 const Pagination = function (props) {
   const { totalPosts, postsPerPage, backDisable, nextDisable, next, back } = props;
