@@ -11,16 +11,22 @@ import Skills from './components/body/skills';
 import Works from './components/body/works/works';
 import Contact from './components/body/contact';  
 import Project from './components/body/project/project';
-import MenuBar from './components/menubar/menubar';
+import Backdrop from './components/layout/backdrop';
+import { useState } from 'react';
 
 function App() {
-    // const params = useParams("/");
-    // console.log(params);
+   const [inMenu, setInMenu] = useState(false)
+  
+  const menuHandler = (menuActive) => {
+    console.log(menuActive);
+    setInMenu(menuActive);
+  }
 
   return (
     <>
+     {inMenu && <Backdrop />}
       <Layout>
-        <Header />
+        <Header menuActive={menuHandler} />
         {/* <MenuBar /> */}
         <div className="centered">
           <Nav />

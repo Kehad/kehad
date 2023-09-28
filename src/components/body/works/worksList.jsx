@@ -71,30 +71,39 @@ const WorkList = function (props) {
   // };
   function handleBackClick() {
     console.log("Back clicked");
+    /* // USE THIS WHEN YOU WANT TO DISABLE THE BACK BUTTON WHEN THE WORKDATA ITEM IS THE 1 ITEM  I.E useState(1)
+    // if (currentPage === 1) {
+    //   setPrevDisable(true);
+    //   return;
+    // }
+    // setForDisable(false);
+    // setPrevDisable(true);
+    // setCurrentPage(currentPage - 1);
+    */
     if (currentPage === 1) {
-      // setPrevDisable(prevdisable => !prevdisable)
-      setPrevDisable(true);
+      setCurrentPage(3);
       return;
     }
-    setForDisable(false);
-    setPrevDisable(true);
     setCurrentPage(currentPage - 1);
   }
+
   function handleNextClick() {
     // console.log('NEXT');
-    // console.log(`worksata: ${worksData.length}`);
-    // console.log(`curentPage: ${currentPage}`);
-    console.log(worksData.length, currentPage);
-
+    /* // USE THIS WHEN YOU WANT TO DISABLE THE NEXT BUTTON WHEN THE WORKDATA ITEM IS FINISHED I.E useState(3)
+    // if (worksData.length === currentPage) {
+    //   setForDisable(true);
+    //   return;
+    // }
+    // setPrevDisable(false);
+    // setForDisable(false);
+    // setCurrentPage(currentPage + 1); 
+    */
     if (worksData.length === currentPage) {
-      // setForDisable((nextdisable) => !nextdisable);
-      setForDisable(true);
+      setCurrentPage(1);
       return;
     }
-    setPrevDisable(false);
-    setForDisable(false);
     setCurrentPage(currentPage + 1);
-  }
+  } 
 
   return (
     <div className={classes.worksList}>

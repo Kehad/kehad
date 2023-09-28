@@ -38,17 +38,28 @@
     }
 }
 
-@media screen and (max-width: 769px) {
-    .pagination__arrow--left {
-        display: none;
-    }
-    .pagination__arrow--right {
 
-        display: none;
+@media screen and (max-width: 769px) {
+    .pagination__small--left {
+        /* left: -50px;
+        top: 30%; */
+        height: 2rem;
+        /* display: none; */
+    }
+    .pagination__small--right {
+        /* right: -40px;
+        top: 30%; */
+        height: 2rem;
+        width: max-content;
+        /* display: none; */
     }
     .pagination__button-text {
         display: flex;
-        gap: 0.5rem;
+        /* gap: 0.5rem; */
         justify-content: right;
+    }
+    .pagination__arrow--left,
+    .pagination__arrow--right {
+        display: none;
     }
 }

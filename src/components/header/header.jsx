@@ -2,13 +2,15 @@ import { useState } from 'react';
 import MenuBar from '../menubar/menubar';
 import classes from './header.module.css';
 import Toggle from './toggleMode';
+import Backdrop from '../layout/backdrop';
 
-const Header = function () {
+const Header = function (props) {
     const [isMenuActive, setIsMenuActive] = useState(false);
 
     const menuHandler = () => {
       setIsMenuActive(true);
     }
+      props.menuActive(isMenuActive);
   
   return (
     <>
@@ -56,6 +58,9 @@ const Header = function () {
       {isMenuActive && (
         <MenuBar menuActive={isMenuActive} setIsMenuActive={setIsMenuActive} />
       )}
+      {/* {isMenuActive && (
+        <Backdrop/>
+      )} */}
     </>
   );      
 };
