@@ -5,8 +5,8 @@
 
   display: flex;
   flex-direction: column;
-  margin-top: 5rem;
-  height: 100%;
+  margin-top: 0rem;
+  /* height: 100%; */
 }
 .home__greeting {
   color: #07c51a;
@@ -33,10 +33,9 @@
   line-height: normal;
   margin-top: 2.7rem;
   margin-bottom: 3rem;
-
-  span {
-    color: #07c51a;
-  }
+}
+.home__text span {
+  color: #07c51a;
 }
 
 .home-buttons {

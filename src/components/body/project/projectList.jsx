@@ -14,7 +14,7 @@ const projectData = [
     name: "Piccon",
     description:
       "Adboöks operates as a subsidiary of Adlife, specializing in the sale of captivating romance novels. Their website is dedicated to showcasing and offering the top 10 romance books. The website seamlessly integrates the branding of their parent company, 'Adlife,' ensuring a cohesive and recognizable experience for our visitors.",
-    website: "https://picco.onrender.com/",
+    website: "https://piccon.onrender.com/",
     imageSrc: Piccon,
   },
   {
@@ -22,7 +22,7 @@ const projectData = [
     name: "CalcXpert",
     description: 
       "CalcXpert is your trusted source for accurate and user-friendly simple online calculators. Whether you're a student, professional, or simply need a reliable tool for calculations, we have you covered. Say goodbye to distractions and explore the world of precise online calculations with CalcXpert.",
-    website: "https://picco.onrender.com/",
+    website: "https://piccon.onrender.com/",
     imageSrc: "https://www.w3schools.com/css/img_5terre.jpg",
   },
 ];
@@ -43,25 +43,24 @@ const ProjectList = function (props) {
   // const numbers = [...Array(npage + 1).keys()].slice(1);
   // console.log(npage, numbers);
 
-  function handleBackClick() {
-    console.log("Back clicked");
-    if (currentPage === 1) {
-      setPrevDisable(true);
-      return;
-    }
-    setForDisable(false);
-    setPrevDisable(false);
-    setCurrentPage(currentPage - 1);
-  }
+
   function handleNextClick() {
     if (projectData.length === currentPage) {
-      setForDisable(true);
+      setCurrentPage(1);
       return;
     }
-    setPrevDisable(false);
-    setForDisable(false);
     setCurrentPage(currentPage + 1);
   }
+   function handleBackClick() {
+   
+     if (currentPage === 1) {
+       setCurrentPage(projectData.length);
+       return;
+     }
+     setCurrentPage(currentPage - 1);
+   }
+
+  
 
   return (
     <div className={classes.worksList}>

@@ -73,7 +73,8 @@ const WorkList = function (props) {
   // };
   function handleBackClick() {
     console.log("Back clicked");
-    /* // USE THIS WHEN YOU WANT TO DISABLE THE BACK BUTTON WHEN THE WORKDATA ITEM IS THE 1 ITEM  I.E useState(1)
+    /*
+     // USE THIS WHEN YOU WANT TO DISABLE THE BACK BUTTON WHEN THE WORKDATA ITEM IS THE 1 ITEM  I.E useState(1)
     // if (currentPage === 1) {
     //   setPrevDisable(true);
     //   return;
@@ -83,15 +84,15 @@ const WorkList = function (props) {
     // setCurrentPage(currentPage - 1);
     */
     if (currentPage === 1) {
-      setCurrentPage(3);
+      setCurrentPage(worksData.length);
       return;
     }
     setCurrentPage(currentPage - 1);
   }
 
   function handleNextClick() {
-    // console.log('NEXT');
-    /* // USE THIS WHEN YOU WANT TO DISABLE THE NEXT BUTTON WHEN THE WORKDATA ITEM IS FINISHED I.E useState(3)
+    /* 
+    // USE THIS WHEN YOU WANT TO DISABLE THE NEXT BUTTON WHEN THE WORKDATA ITEM IS FINISHED I.E useState(3)
     // if (worksData.length === currentPage) {
     //   setForDisable(true);
     //   return;
