@@ -15,7 +15,7 @@ const Header = function (props) {
   return (
     <>
       <div className={classes.header}>
-        <a href='www.kehad.onrender.com'>
+        <a href='https://kehad.onrender.com'>
           <div className={classes["header__logo"]}>
           <svg
             width="39"

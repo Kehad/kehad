@@ -14,7 +14,7 @@
     gap: 1rem;
     transition: all 0.5s;
     /* justify-content: center; */
-    border: 1px solid #07c514;
+    /* border: 1px solid #07c514; */
     z-index: 100;
 }
 
@@ -27,7 +27,7 @@
     /* color: #07c51a; */
     cursor: pointer;
     margin-top: 2rem;
-    border-bottom: 1px solid #07c514;
+    /* border-bottom: 1px solid #07c514; */
     width: 100%;
     text-align: center;
     transition: all 0.5s;
@@ -39,7 +39,7 @@
 @media screen and (max-width: 769px) {
 
     .nav__container---box--name {
-        display: none;
+        display: block;
     }
     .nav__container:hover .nav__container---box--name {
         display: none;
@@ -47,6 +47,10 @@
 
     .nav__container---box--link-contact {
         display: block;
+    }
+    .nav__container---box--link {
+        display: flex;
+        flex-direction: column;    
     }
 }
 /* @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital@1&family=Nunito&display=swap'); */

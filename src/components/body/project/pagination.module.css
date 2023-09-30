@@ -2,6 +2,7 @@
 .pagination__arrow--right {
     width: 4rem;
     height: 4rem;
+    cursor: pointer;
     flex-shrink: 0;
 }
 

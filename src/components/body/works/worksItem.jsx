@@ -6,7 +6,7 @@ import MobilePagination from "../Paginations/mobilePagination";
 
 
 const WorksItem = function (props) {
-    const {name, description, website, imageSrc } = props;
+    const {name, description, website, imageSrc, next, back } = props;
 
   return (  
     <div className={classes.worksItem}>
@@ -29,6 +29,7 @@ const WorksItem = function (props) {
       </div>
       <div className={classes["worksItem__box--buttons"]}>  
         <Button link={website} target={"_blank"} name={"Visit Website"} />
+        <MobilePagination next={next} back={back} />
         </div>
     </div>
   );

@@ -1,3 +1,7 @@
+.mobilePagination__button-text {
+    display: none;
+}
+
 @media screen and (max-width: 769px) {
     .mobilePagination__small--left {
         /* left: -50px;

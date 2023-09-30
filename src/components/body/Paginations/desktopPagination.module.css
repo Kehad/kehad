@@ -19,13 +19,13 @@
     position: absolute;
     /* left: -10%; */
     left: -90px;
-    top: 50%;
+    top: 35%;
 }
 .pagination__arrow--right {
     position: absolute;
     /* right: -10%; */
     right: -90px;
-    top: 50%
+    top: 35%;
 }
 .pagination__button-text {
     display: none;

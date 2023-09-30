@@ -8,7 +8,8 @@ import Pagination from "./pagination.jsx";
 import Adbook from "../../../images/Adbook.png";
 import kadee from "../../../images/kadee.png";
 import Exchnge from "../../../images/static-exchnge.png";
-import MobilePagination from "../Paginations/mobilePagination";
+// import MobilePagination from "../Paginations/mobilePagination";
+import DesktopPagination from "../Paginations/desktopPaginaton";
 // import
 
 const worksData = [
@@ -116,9 +117,11 @@ const WorkList = function (props) {
           description={data.description}
           website={data.website}
           imageSrc={data.imageSrc}
+          next={handleNextClick}
+          back={handleBackClick}
         />
       ))}
-      <Pagination
+      {/* <Pagination
         postsPerPage={recordsPerPage}
         totalPosts={records.length}
         next={handleNextClick}
@@ -127,8 +130,8 @@ const WorkList = function (props) {
         nextDisable={forDisable}
         backDisable={prevDisable}
         initDisable={initDisable}
-      />
-     
+      /> */}
+      <DesktopPagination next={handleNextClick} back={handleBackClick} />
     </div>
   );
 };
